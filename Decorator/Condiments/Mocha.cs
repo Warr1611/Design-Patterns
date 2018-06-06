@@ -10,6 +10,19 @@ public class Mocha : CondimentDecorator {
     }
 
     public double cost() {
-        return beverage.cost() + .20;
+        double cost = beverage.cost();
+        Size size = beverage.getSize();
+        switch (size) {
+            case Size.TALL:
+                cost += .15;
+                break;
+            case Size.GRANDE:
+                cost += .20;
+                break;
+            case Size.VENTI:
+                cost += .25;
+                break;            
+        }
+        return cost;
     }
 }
