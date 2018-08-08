@@ -1,4 +1,12 @@
-public static void Main() {
-    ChocolateBoiler boiler = ChocolateBoiler.getInstance();
-    boiler.fill();   
+﻿using System;
+
+namespace Singleton
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
 }

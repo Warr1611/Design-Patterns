@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Factory
+namespace Test2
 {
     class Program
     {

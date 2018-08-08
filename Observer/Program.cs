@@ -1,9 +1,12 @@
-public void Main(){
-    WeatherData weatherData = new WeatherData();
+﻿using System;
 
-    CurrentConditionDisplay cd = new CurrentConditionDisplay(weatherData);
-
-    weatherData.setMeasurements(80, 65, 30.4);
-    weatherData.setMeasurements(82, 70, 29.2);
-    weatherData.setMeasurements(78, 90, 29.2);
+namespace Observer
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
 }

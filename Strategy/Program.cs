@@ -1,16 +1,12 @@
-public void Main(){
-    Duck mallard = new MallardDuck();
-    mallard.performQuack();
-    mallard.performFly();
+﻿using System;
 
-    // No fly, mute
-    Duck model = new ModelDuck(new FlyNoWay(), new MuteQuack());
-    model.performQuack();
-    model.performFly();
-
-    // Change at runtime to quack and fly rocket powered
-    model.setQuackBehavior(new Quack());
-    model.setFlyBehavior(new FlyRocketPowered());
-    model.performQuack();
-    model.performFly();
+namespace Strategy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
 }

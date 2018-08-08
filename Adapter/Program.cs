@@ -1,7 +1,12 @@
-public void Main () {
-    WildTurkey turkey = new WildTurkey();
-    Duck turkeyAdapter = new TurkeyAdapter(turkey);
+﻿using System;
 
-    turkeyAdapter.quack();
-    turkeyAdapter.fly();
+namespace Adapter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
 }
