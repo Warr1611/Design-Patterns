@@ -1,5 +1,10 @@
-public class Squeak : IQuackBehavior {
-    public override void quack() {
-        Console.WriteLine("Squeak");
+using System;
+
+namespace Strategy
+{
+    public class Squeak : IQuackBehavior {
+        public void quack() {
+            Console.WriteLine("Squeak");
+        }
     }
 }

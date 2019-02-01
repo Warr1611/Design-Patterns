@@ -1,4 +1,7 @@
-public interface Duck {
-    public void quack();
-    public void fly();
+namespace Adapter
+{
+    public interface Duck {
+        void quack();
+        void fly();
+    }
 }

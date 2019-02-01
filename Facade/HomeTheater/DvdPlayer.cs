@@ -1,13 +1,18 @@
-public class DvdPlayer {
-    public void on() {
-        Console.WriteLine("DVD on...");
-    }
+using System;
 
-    public void play() {
-        Console.WriteLine("DVD playing...");
-    }
+namespace Facade
+{
+    public class DvdPlayer {
+        public void on() {
+            Console.WriteLine("DVD on...");
+        }
 
-    public void off() {
-        Console.WriteLine("DVD off...");
+        public void play() {
+            Console.WriteLine("DVD playing...");
+        }
+
+        public void off() {
+            Console.WriteLine("DVD off...");
+        }
     }
 }

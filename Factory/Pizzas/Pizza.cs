@@ -1,26 +1,32 @@
-public abstract class Pizza {
-    string name;
-    string dough;
-    string sauce;
-    List<string> toppings = new List<string>();
+using System;
+using System.Collections.Generic;
 
-    void prepare() {
-        Console.WriteLine("Preparing...");
-    }
+namespace Factory
+{
+    public abstract class Pizza {
+        protected string name;
+        protected string dough;
+        protected string sauce;
+        protected List<string> toppings = new List<string>();
 
-    void bake() {
-        Console.WriteLine("Baking...");
-    }
+        public void prepare() {
+            Console.WriteLine("Preparing...");
+        }
 
-    void cut() {
-        Console.WriteLine("Cutting into triangles...");
-    }
+        public void bake() {
+            Console.WriteLine("Baking...");
+        }
 
-    void box() {
-        Console.WriteLine("Boxing...");
-    }
+        public void cut() {
+            Console.WriteLine("Cutting into triangles...");
+        }
 
-    public string getName() {
-        return name;
+        public void box() {
+            Console.WriteLine("Boxing...");
+        }
+
+        public string getName() {
+            return name;
+        }
     }
 }

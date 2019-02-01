@@ -1,10 +1,13 @@
-public class HouseBlend : Beverage {
-    
-    public HouseBlend() {
-        description = "House Blend Coffee";
-    }
+namespace Decorator
+{
+    public class HouseBlend : Beverage {
+        
+        public HouseBlend() {
+            description = "House Blend Coffee";
+        }
 
-    public double cost() {
-        return .89;
+        public override double cost() {
+            return .89;
+        }
     }
 }

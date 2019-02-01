@@ -1,4 +1,7 @@
-public interface Turkey {
-    public void gobble();
-    public void fly();
+namespace Adapter
+{
+    public interface Turkey {
+        void gobble();
+        void fly();
+    }
 }

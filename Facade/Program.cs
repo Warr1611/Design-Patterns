@@ -6,7 +6,9 @@ namespace Facade
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            HomeTheaterFacade facade = new HomeTheaterFacade(new DvdPlayer(), new Lights());
+            facade.watchMovie();
+            facade.endMovie();
         }
     }
 }

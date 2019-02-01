@@ -1,3 +1,6 @@
-public interface DisplayElement {
-    public abstract void display();
+namespace Observer
+{
+    public interface DisplayElement {
+        void display();
+    }
 }

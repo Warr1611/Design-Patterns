@@ -1,17 +1,20 @@
-public abstract class PizzaStore {
+namespace Factory
+{
+    public abstract class PizzaStore {
 
-    public Pizza orderPizza(string type) {
-        Pizza pizza;
+        public Pizza orderPizza(string type) {
+            Pizza pizza;
 
-        pizza = createPizza(type);
+            pizza = createPizza(type);
 
-        pizza.prepare();
-        pizza.bake();
-        pizza.cut();
-        pizza.box();
+            pizza.prepare();
+            pizza.bake();
+            pizza.cut();
+            pizza.box();
 
-        return pizza;
+            return pizza;
+        }
+
+        protected abstract Pizza createPizza(string type);
     }
-
-    protected abstract Pizza createPizza(string type);
 }

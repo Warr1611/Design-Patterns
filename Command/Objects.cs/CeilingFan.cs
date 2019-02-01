@@ -1,11 +1,14 @@
-public class CeilingFan {
-    public enum Speed {
-        HIGH, MEDIUM, LOW, OFF
-    }
+namespace Command
+{
+    public class CeilingFan {
+        public enum Speed {
+            HIGH, MEDIUM, LOW, OFF
+        }
 
-    Speed speed;
+        public Speed speed;
 
-    public CeilingFan() {
-        speed = Speed.OFF;
+        public CeilingFan() {
+            speed = Speed.OFF;
+        }
     }
 }

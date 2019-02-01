@@ -1,3 +1,6 @@
-public interface IFlyBehavior {
-    abstract public void fly();
+namespace Strategy
+{
+    public interface IFlyBehavior {
+        void fly();
+    }
 }

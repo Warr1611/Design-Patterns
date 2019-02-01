@@ -1,4 +1,7 @@
-public class NoCommand : Command {
-    public void execute() { }
-    public void undo() { }
+namespace Command
+{
+    public class NoCommand : Command {
+        public void execute() { }
+        public void undo() { }
+    }
 }

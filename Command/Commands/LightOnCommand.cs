@@ -1,15 +1,18 @@
-public class LightOnCommand : Command {
-    Light light;
+namespace Command
+{
+    public class LightOnCommand : Command {
+        Light light;
 
-    public LightOnCommand(Light light) {
-        light = light;
-    }
+        public LightOnCommand(Light light) {
+            this.light = light;
+        }
 
-    public void execute() {
-        light.on();
-    }
-    
-    public void undo() {
-        light.off();
+        public void execute() {
+            light.on();
+        }
+        
+        public void undo() {
+            light.off();
+        }
     }
 }

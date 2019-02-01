@@ -6,7 +6,8 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ChocolateBoiler boiler = ChocolateBoiler.getInstance();
+            boiler.fill();   
         }
     }
 }

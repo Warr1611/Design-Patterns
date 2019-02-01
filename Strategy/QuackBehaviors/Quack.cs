@@ -1,5 +1,10 @@
-public class Quack : IQuackBehavior {
-    public override void quack() {
-        Console.WriteLine("Quack");
+using System;
+
+namespace Strategy
+{
+    public class Quack : IQuackBehavior {
+        public void quack() {
+            Console.WriteLine("Quack");
+        }
     }
 }

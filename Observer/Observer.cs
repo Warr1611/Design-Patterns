@@ -1,3 +1,6 @@
-public interface Observer {
-    public abstract void update(Subject s);
+namespace Observer
+{
+    public interface Observer {
+        void update(Subject s);
+    }
 }

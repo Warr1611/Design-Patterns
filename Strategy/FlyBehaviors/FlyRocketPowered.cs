@@ -1,5 +1,10 @@
-public class FlyRocketPowered : IFlyBehavior {
-    public override void fly() {
-        Console.WriteLine("I'm flying with a rocket!'");
+using System;
+
+namespace Strategy
+{
+    public class FlyRocketPowered : IFlyBehavior {
+        public void fly() {
+            Console.WriteLine("I'm flying with a rocket!'");
+        }
     }
 }

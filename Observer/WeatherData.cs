@@ -1,39 +1,40 @@
-public class WeatherData : Subject {
-    private List<Observer> observers;
-    private float temperature;
-    private float humidity;
-    private float pressure;
+using System.Collections.Generic;
 
-    public WeatherData() {
-        observers = new List<Observer>();
-    }
+namespace Observer
+{
+    public class WeatherData : Subject {
+        private List<Observer> observers;
+        public float temperature;
+        public float humidity;
+        public float pressure;
 
-    public void registerObserver(Observer o) {
-        observers.Add(o);
-    }
-
-    public void removeObserver(Observer o) {
-        // TODO: This is a Java implementation, convert to C# List syntax
-        int i = observers.indexOf(o);
-        if (i >= 0) {
-            observers.Remove(i);
+        public WeatherData() {
+            observers = new List<Observer>();
         }
-    }
 
-    public void notifyObservers() {
-        foreach (Observer o in observers) {
-            o.update(this);
+        public void registerObserver(Observer o) {
+            observers.Add(o);
         }
-    }
 
-    public void measurementsChanged() {
-        notifyObservers();
-    }
+        public void removeObserver(Observer o) {
+            observers.Remove(o);
+        }
 
-    public void setMeasurements(float temperature, float humidity, float pressure) {
-        temperature = temperature;
-        humidity = humidity;
-        pressure = pressure;
-        measurementsChanged();
+        public void notifyObservers() {
+            foreach (Observer o in observers) {
+                o.update(this);
+            }
+        }
+
+        public void measurementsChanged() {
+            notifyObservers();
+        }
+
+        public void setMeasurements(float temperature, float humidity, float pressure) {
+            this.temperature = temperature;
+            this.humidity = humidity;
+            this.pressure = pressure;
+            measurementsChanged();
+        }
     }
 }

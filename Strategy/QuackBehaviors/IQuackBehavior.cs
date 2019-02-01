@@ -1,3 +1,6 @@
-public interface IQuackBehavior {
-    abstract public void quack();
+namespace Strategy
+{
+    public interface IQuackBehavior {
+        void quack();
+    }
 }

@@ -6,7 +6,8 @@ namespace Template
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CoffeeWithHook coffeeHook = new CoffeeWithHook();
+            coffeeHook.prepareRecipe();
         }
     }
 }

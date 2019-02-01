@@ -1,14 +1,19 @@
-public class ChicagoStyleCheesePizza : Pizza {
+using System;
 
-    public ChicagoStyleCheesePizza() {
-        name = "Chicago Style Deep Dish Cheese Pizza";
-        dough = "Extra Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
+namespace Factory
+{
+    public class ChicagoStyleCheesePizza : Pizza {
 
-        toppings.Add("Shredded Mozzarella Cheese");
-    }
+        public ChicagoStyleCheesePizza() {
+            name = "Chicago Style Deep Dish Cheese Pizza";
+            dough = "Extra Thick Crust Dough";
+            sauce = "Plum Tomato Sauce";
 
-    public void cut() {
-        Console.WriteLine("Cutting the pizza into square slices");
+            toppings.Add("Shredded Mozzarella Cheese");
+        }
+
+        public void cut() {
+            Console.WriteLine("Cutting the pizza into square slices");
+        }
     }
 }

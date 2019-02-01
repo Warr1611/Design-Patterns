@@ -1,5 +1,10 @@
-public class Mute : IQuackBehavior {
-    public override void quack() {
-        Console.WriteLine("<< Silence >>");
+using System;
+
+namespace Strategy
+{
+    public class MuteQuack : IQuackBehavior {
+        public void quack() {
+            Console.WriteLine("<< Silence >>");
+        }
     }
 }

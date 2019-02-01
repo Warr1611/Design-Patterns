@@ -1,10 +1,13 @@
-public class DarkRoast : Beverage {
+namespace Decorator
+{
+    public class DarkRoast : Beverage {
 
-    public DarkRoast() {
-        description = "Dark Roast";
-    }
+        public DarkRoast() {
+            description = "Dark Roast";
+        }
 
-    public double cost() {
-        return .99;
+        public override double cost() {
+            return .99;
+        }
     }
 }

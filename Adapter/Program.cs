@@ -1,12 +1,14 @@
-﻿using System;
-
-namespace Adapter
+﻿namespace Adapter
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WildTurkey turkey = new WildTurkey();
+            Duck turkeyAdapter = new TurkeyAdapter(turkey);
+
+            turkeyAdapter.quack();
+            turkeyAdapter.fly();
         }
     }
 }
