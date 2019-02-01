@@ -1,10 +1,9 @@
 namespace Decorator
 {
     public class Soy : CondimentDecorator {
-        Beverage beverage;
 
         public Soy(Beverage beverage) {
-            this.beverage = beverage;
+            base.beverage = beverage;
         }
 
         public override string getDescription() {

@@ -1,10 +1,9 @@
 namespace Decorator
 {
     public class Whip : CondimentDecorator {
-        Beverage beverage;
 
         public Whip(Beverage beverage) {
-            this.beverage = beverage;
+            base.beverage = beverage;
         }
 
         public override string getDescription() {

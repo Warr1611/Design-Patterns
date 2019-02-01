@@ -2,9 +2,9 @@ namespace Decorator
 {
     public abstract class CondimentDecorator : Beverage {
         public Beverage beverage;
-        public abstract string getDescription();
+        public abstract new string getDescription();
 
-        public Size getSize() {
+        public new Size getSize() {
             return beverage.getSize();
         }
     }
